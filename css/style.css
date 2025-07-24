@@ -1,0 +1,1114 @@
+:root {
+  --bgcmain: #0b1924;
+  --bgcposts: #12222f;
+  --color: #ffff;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(4, 59, 85);
+  border-radius: 70px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+#body1 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* transition:0.3s ease-in-out; */
+  background-color: var(--bgcmain);
+}
+.continer {
+  max-width: 1000px;
+  width: 100%;
+  padding-inline: 20px;
+  transition: all 0.6s;
+}
+@media (max-width:440px) {
+  .continer {
+    padding-inline: 1px;
+    width: 84vw;
+  }
+}
+header {
+  background-color: rgba(255, 255, 255, 0.404);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin-bottom: 80px;
+}
+header .log {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-image: linear-gradient(
+    135deg,
+    rgba(230, 230, 230, 1),
+    rgb(17, 4, 4)
+  );
+  border-radius: 20px;
+  padding: 10px;
+  /* color: rgba(9, 143, 153, 0.651);
+   */
+  color: white;
+}
+
+header .log i {
+  font-size: 35px;
+  transform: rotate(-15deg);
+}
+.useer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.useer img {
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+header .logi a {
+  color: rgba(3, 3, 3, 0.63);
+}
+
+/* slaydr */
+#body1 .slaydr {
+  background-color: #12222f;
+  width: 66%;
+  height: fit-content;
+  text-align: center;
+  position: absolute;
+  display: none;
+  top: 15%;
+  transition: 0.5s;
+  z-index: 1;
+  border-radius: 20px;
+  padding: 15px;
+  color: #fff;
+}
+#body1 .slaydr h1,
+#body1 .slaydr .COM {
+  margin-bottom: 30px;
+
+  text-decoration: underline;
+}
+#body1 .slaydr .usercoment {
+  border: 1px solid;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+#body1 .slaydr .bttt {
+  position: relative;
+  margin-bottom: 60px;
+}
+#body1 .slaydr .sundbtn {
+  background-color: red;
+  position: relative;
+  right: 10px;
+  position: absolute;
+  padding: 7px;
+  font-size: 17px;
+}
+#body1 .slaydr .usercoment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+.useer img:hover
+{
+    border: 3px solid #03BFCB;
+}
+.chengcolor
+{
+ transition: all .4s ease-in-out;
+ cursor: pointer;
+}
+.chengcolor:hover
+{
+  color: #0ef;
+}
+#body1 .slaydr .usercoment p {
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 30px;
+  color: #fc4347;
+  font-size: 18px;
+}
+.inputCommt {
+  width: 100%;
+  margin-block: 20px;
+  background-color: transparent;
+  border: 1px solid wheat;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  color: wheat;
+}
+#body1 .inp {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  transition: 0.5s;
+  align-items: center;
+}
+#body1 .inp i {
+  background-color: rgb(7, 102, 109);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#body1 .inp i:hover {
+  scale: 0.9;
+}
+#body1 button {
+  all: unset;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative;
+  width: 100px;
+  text-align: center;
+  border-radius: 999vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
+    0.0375em 0.0375em 0.0675em 0 rgba(5, 5, 5, 0.1);
+}
+
+
+button .button-outer {
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+  text-align: center;
+
+  transition: box-shadow3 300ms ease;
+  will-change: box-shadow;
+  box-shadow: 0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
+    0 0.01em 0.01em -0.01em rgba(5, 5, 5, 0.5),
+    0.15em 0.3em 0.1em -0.01em rgba(5, 5, 5, 0.25);
+}
+
+button:hover .button-outer {
+  box-shadow: 0 0 0 0 rgba(5, 5, 5, 1), 0 0 0 0 rgba(5, 5, 5, 0.5),
+    0 0 0 0 rgba(5, 5, 5, 0.25);
+}
+
+.button-inner {
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+  padding: 1em 1.5em;
+  background-image: linear-gradient(
+    135deg,
+    rgba(230, 230, 230, 1),
+    rgba(180, 180, 180, 1)
+  );
+  transition: box-shadow 300ms ease, clip-path 250ms ease,
+    background-image 250ms ease, transform 250ms ease;
+  will-change: box-shadow, clip-path, background-image, transform;
+  overflow: clip;
+  clip-path: inset(0 0 0 0 round 999vw);
+  box-shadow: 0 0 0 0 inset rgba(5, 5, 5, 0.1),
+    -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
+    0 0 0 0 inset rgba(5, 5, 5, 0.1),
+    0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
+    0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
+    0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+    -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
+}
+
+button:hover .button-inner {
+  clip-path: inset(
+    clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px)
+      clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 999vw
+  );
+  box-shadow: 0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
+    -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
+    0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
+    0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
+    0 0 0 0 inset rgba(255, 255, 255, 1),
+    0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
+    -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
+}
+
+button .button-inner span {
+  position: relative;
+  z-index: 4;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.05em;
+  font-weight: bold;
+  transform: skewX(-22deg);
+  background-image: linear-gradient(
+    135deg,
+    rgba(25, 25, 25, 1),
+    rgba(75, 75, 75, 1)
+  );
+  background-clip: text;
+  transition: transform 250ms ease;
+  display: block;
+  will-change: transform;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button:hover .button-inner span {
+  transform: scale(0.975);
+  transform: skewX(-22deg);
+}
+button:active .button-inner {
+  transform: scale(0.975);
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+main .posts {
+  width: 100%;
+}
+main .psot {
+  background-color: var(--bgcposts);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: antiquewhite;
+  box-shadow: 1px 1px 12px 1px black;
+  margin-bottom: 40px;
+}
+.psot .portflie img:hover
+{
+  border:3px solid #0ef ;
+}
+.psot .portflie img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all;
+  border-radius: 80%;
+  margin-right: 10px;
+}
+.psot .portflie {
+  border: 3px solid rgba(40, 51, 58, 0.521);
+  border-radius: 30px;
+  padding-inline: 15px;
+  margin-bottom: 6px;
+}
+.click
+{
+ cursor: pointer;
+ transition: .3s;
+}
+.click:hover
+{
+  color: aqua;
+}
+.psot .portflie i {
+  font-size: 23px;
+}
+
+.psot .portflie .img {
+  display: flex;
+  align-items: center;
+}
+.psot .portflie .img a{
+  color: white;
+  transition: .3s;
+}
+.psot .portflie .img a:hover
+{
+  color: #0ef;
+}
+
+.psot .portflie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imges {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  border-radius: 20px;
+  padding-block: 20px;
+}
+.imges img {
+  width: 95%;
+  max-height: 600px;
+  border-radius: 20px;
+  margin-left: 12px;
+  filter: contrast(1.2) saturate(1.3) brightness(0.9)
+    drop-shadow(1px 1px 12px rgba(66, 65, 65, 0.582));
+}
+.addpost {
+  font-size: 28px;
+  color: #e9e2e2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  padding: 7px 10px;
+  position: fixed;
+  z-index: 122333322;
+  right:20PX;
+  cursor: pointer;
+  bottom: 4%;
+}
+.psot .time {
+  transform: translateY(-38px) translateX(28%);
+  padding: 0px 10px;
+  overflow: hidden;
+  width: fit-content;
+}
+.psot .time::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 140px;
+  z-index: -12;
+  height: 20px;
+  left: -12px;
+  transform: skewX(-30deg);
+}
+
+.head {
+  text-align: center;
+}
+.head i {
+  color: rgba(5, 5, 5, 0.726);
+  margin-bottom: 20px;
+}
+.text {
+  margin-bottom: 20px;
+}
+.comments {
+  border: 3px solid rgba(40, 51, 58, 0.521);
+  border-radius: 30px;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+/* ____________________login_____________________ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+#body2 {
+  display: flex;
+ background: url(https://c.wallhere.com/photos/da/70/digital_art_landscape_illustration_skyline-2285476.jpg!d) no-repeat; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#body2 .container {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#body2 .container span {
+  position: absolute;
+  left: 0;
+  width: 32px;
+  height: 6px;
+  background: #2c4766;
+  border-radius: 8px;
+  transform-origin: 128px;
+  transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+  animation: animateBlink 3s linear infinite;
+  animation-delay: calc(var(--i) * (6s / 50));
+}
+
+@keyframes animateBlink {
+  0% {
+    background: #0ef;
+  }
+
+  25% {
+    background: #2c4766;
+  }
+}
+.login-box {
+  position: absolute;
+  width: 330px;
+}
+
+.login-box form {
+  width: 100%;
+  padding: 0 0px;
+}
+
+#body2 h2 {
+  font-size: 2em;
+  color: #0ef;
+  text-align: center;
+}
+.input-box {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #2c4766;
+  outline: none;
+  border-radius: 40px;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 20px;
+  transition: 0.5s;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #0ef;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 1px;
+  font-size: 0.8em;
+  background-color: #1f293a;
+  padding: 0 6px;
+  color: #0ef;
+}
+
+.forgot-password {
+  margin: -15px 0 10px;
+  text-align: center;
+}
+
+.forgot-password a {
+  font-size: 0.85em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+#body2 .btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 45px;
+  background: #0ef;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #1f293a;
+  transition: 0.6s;
+  font-weight: 600;
+}
+#body2 .btn:hover {
+  background-color: black;
+  transform: scale(0.96);
+  color: wheat;
+}
+
+.signup-link {
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.signup-link a {
+  font-size: 1em;
+  color: #0ef;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* ________________________register_________________ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+#body3,
+#body3 input,
+#body3 button {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#body3 {
+   background: url(https://c.wallhere.com/photos/da/70/digital_art_landscape_illustration_skyline-2285476.jpg!d) no-repeat; 
+  color: hsl(0, 0%, 100%);
+}
+
+#body3 input,
+#body3 button {
+  border: none;
+  outline: none;
+}
+/* 
+a {
+  text-decoration: none;
+} */
+
+#body3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+#body3 .login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#body3 .login__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#body3 .container {
+  position: relative;
+  background-color: hsla(0, 0%, 10%, 0.1);
+  border: 2px solid white;
+  margin-inline: 1.5rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+@media (max-width:500PX) {
+
+
+}
+#body3 .login__title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#body3 .login__content,
+#body3 .login__box {
+  display: grid;
+}
+
+#body3 .login__content {
+  row-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#body3 .login__box {
+  /* grid-template-columns: max-content 1fr; */
+  align-items: center;
+  column-gap: 0.75rem;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+#body3 .login__icon,
+.login__eye {
+  font-size: 1.25rem;
+  margin-left: 323PX;
+  margin-bottom: -24px;
+}
+
+.login__input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 1;
+}
+
+.login__box-input {
+  position: relative;
+}
+
+.login__label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: 500;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.login__eye {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.login__box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+
+.login__check,
+.login__check-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__check {
+  margin-bottom: 1rem;
+}
+
+.login__check-label,
+.login__forgot,
+.login__register {
+  font-size: 0.813rem;
+}
+
+.login__check-group {
+  column-gap: 0.5rem;
+}
+
+.login__check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.login__forgot {
+  color: hsl(0, 0%, 100%);
+}
+
+.login__forgot:hover {
+  text-decoration: underline;
+}
+
+#body3 .login__button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: 0.4s;
+}
+#body3 .login__button:hover {
+  background-color: #fc4347;
+  scale: 0.9;
+}
+.name_user {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+.login__register {
+  text-align: center;
+}
+
+.login__register a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.login__register a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus move up label */
+.login__input:focus + .login__label {
+  top: -12px;
+  color: #fc4347;
+  font-size: 0.813rem;
+  font-weight: bolder;
+}
+
+/* Input focus sticky top label */
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+  top: -12px;
+  font-size: 0.813rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+
+  .container {
+    width: 400px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .login__title {
+    font-size: 2rem;
+  }
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 14px;
+  text-align: center;
+  color: rgb(255, 252, 247);
+  font-size: 15px;
+}
+.xxx {
+  border-bottom: none !important;
+}
+.ww {
+  font-size: 18px !important;
+  font-weight: bolder;
+}
+.borderr {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 17px;
+  border-radius: 15px;
+}
+.borderr input::file-selector-button {
+  background-color: #fc4347;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 17px;
+  outline: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+.portflie
+{
+  position: relative;
+}
+.portflie ul
+{
+  background-color: rgb(40, 42, 43);
+  position: absolute;
+   padding: 1px 0px;
+ width: 100px;
+ display: none;
+  right: 8%;
+  border-radius: 10%;
+}
+.portflie i{
+  cursor:grabbing;
+  transition: 0.4s;
+}
+.portflie i:hover
+{
+  scale: 0.9;
+}
+
+.portflie uL li
+{
+  border-bottom: 1px solid #0b1924 ;
+  padding: 4px;
+  border-radius:10% ;
+  cursor:grabbing;
+  font-weight: bold;
+  transition: .4s;
+}
+.portflie uL li:hover{
+  background-color: rgb(11, 206, 206);
+}
+.portflie uL li i{
+  color:#fc4347;
+  scale: 0.76;
+}
+
+
+/* ________________body5__________________ */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+#body5 {
+	background-color: #28223F;
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+  
+}
+
+#body5 h3 {
+	margin: 10px 0;
+}
+
+#body5 h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+#body5 .buttons
+{
+  display: flex;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+#body5 p {
+	font-size: 14px;
+	line-height: 21px;
+  position: relative;
+}
+#body5 .card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	max-width: 100%; 
+  width: 70vw;
+	text-align: center;
+}
+
+#body5 .card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bolder;
+	padding: 4px 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+#body5 a
+{
+  font-size: 18px;
+  transition: .5s;
+  	color: #B3B8CD;
+}
+#body5 a:hover
+{
+  color: red;
+}
+#body5 .card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+  width: 120px;
+  height: 120px;
+	padding: 2px;
+}
+#body5 .fliche
+{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 28px;
+  font-weight:bolder;
+}
+#body5 button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+#body5 button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+#body5 .skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+  text-align: center;
+	margin-top: 30px;
+}
+
+#body5 .skills .boxss{
+  /* background-color: #16112c; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  padding: 10px;
+  gap: 12px;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+#body5 .skills .boxss img
+{
+  width: 100%;
+   cursor: pointer;
+  height: 100%;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+#body5 .skills .boxss img:hover
+{
+  scale: 0.95;
+}
+#body5 .skills .box
+{
+  height: 280px;
+}
+.iimg
+{
+  height: 375px;
+}
+.posts_entre_profile{
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.posts_entre_profile .postss
+{
+  background-color: var(--bgcposts);
+  /* width: 700px; */
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: none;
+  z-index: 44;
+}
+.posts_entre_profile .postss .sund
+{
+  background-color: rgba(8, 83, 27, 0.288);
+  padding: 26px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50px;
+  float: right;
+  margin-top :7PX;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+
+.custom-loader {
+  width: 65px;
+  height: 60px;
+  --c: linear-gradient(#57ff09 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  background-size: 9px 50%;
+  background-repeat: no-repeat;
+  animation: b7 1s infinite linear alternate;
+  position: fixed;
+  bottom: 50%;
+  z-index: 122;
+  /* opacity: 0; */
+  background-color: #02283b59;
+  border-radius: 8PX;
+}
+@keyframes b7 {
+    20% {background-size:9px 20% ,9px 50% ,9px 50% }
+    40% {background-size:9px 100%,9px 20% ,9px 50% }
+    60% {background-size:9px 50% ,9px 100%,9px 20% }
+    80% {background-size:9px 50% ,9px 50% ,9px 100%}
+}
+.relodd{
+  right: 45%;
+}
+
+
+.alert {
+  padding: 20px;
+  background-color: #5cf436;
+  background: linear-gradient(to right,#5cf436,rgba(0, 0, 0, 0.384));
+  color: white;
+  position: fixed;
+  z-index: 3333333322;
+  bottom: 14%;
+  opacity: 0;
+  transition:all .5s;
+  right: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  border-left: 5px solid rgb(238, 255, 0);
+  border-top-right-radius: 5PX;
+  border-bottom-right-radius: 5PX;
+
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  float: right;
+  font-size: 26px;
+  font-weight: bolder;
+  line-height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.closebtn:hover {
+
+  color: black;
+}
+.drre
+{
+  right: 50%;
+}
